@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Sidebar y Contenido Principal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Ejer009.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+</head>
+<body>
+    <div>
+        <div class="row">
+        <main>
+            <div class="container">
+                <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                    <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" fill="currentColor" class="bi bi-egg-fried" viewBox="0 0 16 16">
+                            <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                            <path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"/>
+                        </svg>
+                    </a>
+                    <ul class="nav nav-pills">
+                        <div class="ms-auto">
+                            <form class="w-100 me-3" role="search">
+                                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                            </form>
+                            </div>
+                        <div class="ms-auto">
+                            <a href="Formulario009.html" class="nav-link active custom-active" aria-current="page">Contactanos</a>
+                        </div>
+                    </ul>
+                </header>
+            </div>
+            <div class="col">
+                <div class="album py-5 bg-light">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                            <div class="col">
+                                <div class="card shadow-sm text-bg-custom" style="border: 4px solid #7111ad;">
+                                    <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                        src="https://www.recetasnestle.cl/sites/default/files/srh_recipes/4d95ee421422145ef856c040751d4386.jpg" role="img"
+                                        aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                        focusable="false">
+                                        <title>Pollo Asado</title>
+                                    </img>
+                                    <div class="card-body">
+                                        <div class="collapse" id="collapseText1">
+                                            <p class="card-text text-center mt-3">
+                                                <strong>Pollo Asado</strong><br>
+                                                Ingredientes:<br>
+                                                - 1 pollo entero (1.5 kg)<br>
+                                                - 4 dientes de ajo<br>
+                                                - 2 limones<br>
+                                                - 3 cucharadas de aceite de oliva<br>
+                                                - 1 cucharada de tomillo<br>
+                                                - 1 cucharada de romero<br>
+                                                - Sal y pimienta al gusto
+                                            </p>
+                                            <hr>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="btn-group">
+                                                <button class="btn btn-sm text-bg-custom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseText1" aria-expanded="false" aria-controls="collapseText1">
+                                                    Información del plato
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm text-bg-custom" style="border: 4px solid #7111ad;">
+                                    <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                        src="https://polloseldorado.co/wp-content/uploads/2023/09/pollo-al-limon-portada.jpg" role="img"
+                                        aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                        focusable="false">
+                                        <title>Pollo al limon</title>
+                                    </img>
+                                    <div class="card-body">
+                                        <div class="collapse" id="collapseText2">
+                                            <p class="card-text text-center mt-3">
+                                                <strong>Pollo al Limón</strong><br>
+                                                Ingredientes:<br>
+                                                - 4 pechugas de pollo<br>
+                                                - 2 limones (jugo y ralladura)<br>
+                                                - 2 cucharadas de aceite de oliva<br>
+                                                - 2 dientes de ajo picados<br>
+                                                - 1 cucharada de perejil fresco<br>
+                                                - Sal y pimienta al gusto
+                                            </p>
+                                            <hr>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="btn-group">
+                                                <button class="btn btn-sm text-bg-custom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseText2" aria-expanded="false" aria-controls="collapseText2">
+                                                    Información del plato
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm text-bg-custom" style="border: 4px solid #7111ad;">
+                                    <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                        src="https://curadas.com/wp-content/uploads/2024/02/pollo-marinado-FILEminimizer.jpg" role="img"
+                                        aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                        focusable="false">
+                                        <title>Pollo con alcachofas</title>
+                                    </img>
+                                    <div class="card-body">
+                                        <div class="collapse" id="collapseText3">
+                                            <p class="card-text text-center mt-3">
+                                                <strong>Pollo con Alcachofas</strong><br>
+                                                Ingredientes:<br>
+                                                - 4 contramuslos de pollo<br>
+                                                - 8 alcachofas<br>
+                                                - 1 cebolla grande<br>
+                                                - 3 dientes de ajo<br>
+                                                - 200ml de vino blanco<br>
+                                                - 2 cucharadas de aceite de oliva<br>
+                                                - 1 hoja de laurel<br>
+                                                - 1 limón<br>
+                                                - Sal y pimienta al gusto
+                                            </p>
+                                            <hr>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="btn-group">
+                                                <button class="btn btn-sm text-bg-custom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseText3" aria-expanded="false" aria-controls="collapseText3">
+                                                    Información del plato
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm text-bg-custom" style="border: 4px solid #7111ad;">
+                                    <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                        src="https://content-cocina.lecturas.com/medio/2023/06/02/paso_a_paso_para_bunuelos_de_pollo_y_puerro_resultado_final_19199093_1280x720.jpg" role="img"
+                                        aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                        focusable="false">
+                                        <title>Buñuelos de pollo y puerro</title>
+                                    </img>
+                                    <div class="card-body">
+                                        <div class="collapse" id="collapseText4">
+                                            <p class="card-text text-center mt-3">
+                                                <strong>Buñuelos de Pollo y Puerro</strong><br>
+                                                Ingredientes:<br>
+                                                - 300g de pollo cocido desmenuzado<br>
+                                                - 2 puerros<br>
+                                                - 2 huevos<br>
+                                                - 100g de harina<br>
+                                                - 200ml de leche<br>
+                                                - 50g de queso rallado<br>
+                                                - Aceite para freír<br>
+                                                - Sal y pimienta al gusto
+                                            </p>
+                                            <hr>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="btn-group">
+                                                <button class="btn btn-sm text-bg-custom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseText4" aria-expanded="false" aria-controls="collapseText4">
+                                                    Información del plato
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm text-bg-custom" style="border: 4px solid #7111ad;">
+                                    <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                        src="https://content-cocina.lecturas.com/medio/2021/07/13/libritos-de-jamon-y-queso-con-pimientos_23d97a1b_900x900.jpg" role="img"
+                                        aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                        focusable="false">
+                                        <title>Libritos de pollo rellenos</title>
+                                    </img>
+                                    <div class="card-body">
+                                        <div class="collapse" id="collapseText5">
+                                            <p class="card-text text-center mt-3">
+                                                <strong>Libritos de Pollo Rellenos</strong><br>
+                                                Ingredientes:<br>
+                                                - 4 filetes de pechuga de pollo<br>
+                                                - 8 lonchas de jamón york<br>
+                                                - 8 lonchas de queso<br>
+                                                - 2 huevos<br>
+                                                - Pan rallado<br>
+                                                - Aceite para freír<br>
+                                                - Sal y pimienta al gusto
+                                            </p>
+                                            <hr>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="btn-group">
+                                                <button class="btn btn-sm text-bg-custom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseText5" aria-expanded="false" aria-controls="collapseText5">
+                                                    Información del plato
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm text-bg-custom" style="border: 4px solid #7111ad;">
+                                    <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                        src="https://content-cocina.lecturas.com/medio/2018/07/19/pollo-al-chilindron_00000000_240220145856_600x600.jpg" role="img"
+                                        aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                        focusable="false">
+                                        <title>Pollo al chilindron</title>
+                                    </img>
+                                    <div class="card-body">
+                                        <div class="collapse" id="collapseText6">
+                                            <p class="card-text text-center mt-3">
+                                                <strong>Pollo al Chilindrón</strong><br>
+                                                Ingredientes:<br>
+                                                - 1 pollo troceado<br>
+                                                - 2 pimientos rojos<br>
+                                                - 2 cebollas<br>
+                                                - 4 tomates maduros<br>
+                                                - 100g de jamón serrano<br>
+                                                - 2 dientes de ajo<br>
+                                                - Aceite de oliva<br>
+                                                - Sal y pimienta al gusto
+                                            </p>
+                                            <hr>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="btn-group">
+                                                <button class="btn btn-sm text-bg-custom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseText6" aria-expanded="false" aria-controls="collapseText6">
+                                                    Información del plato
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm text-bg-custom" style="border: 4px solid #7111ad;">
+                                    <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                        src="https://content-cocina.lecturas.com/medio/2018/07/19/paso-a-paso-para-realizar-pollo-asado-con-mandarinas-resultado-final_28e12c68_800x800.jpg" role="img"
+                                        aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                        focusable="false">
+                                        <title>Pollo asado con mandarina</title>
+                                    </img>
+                                    <div class="card-body">
+                                        <div class="collapse" id="collapseText7">
+                                            <p class="card-text text-center mt-3">
+                                                <strong>Pollo Asado con Mandarina</strong><br>
+                                                Ingredientes:<br>
+                                                - 1 pollo entero (1.8 kg)<br>
+                                                - 4 mandarinas<br>
+                                                - 4 dientes de ajo<br>
+                                                - 3 cucharadas de aceite de oliva<br>
+                                                - 1 cucharada de miel<br>
+                                                - 1 rama de romero<br>
+                                                - 1 cebolla<br>
+                                                - Sal y pimienta al gusto
+                                            </p>
+                                            <hr>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="btn-group">
+                                                <button class="btn btn-sm text-bg-custom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseText7" aria-expanded="false" aria-controls="collapseText7">
+                                                    Información del plato
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm text-bg-custom" style="border: 4px solid #7111ad;">
+                                    <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                        src="https://content-cocina.lecturas.com/medio/2021/09/16/paso_a_paso_para_realizar_fiambre_de_pollo_relleno_con_huevo_duro_y_pistachos_resultado_final_e4178eaa_1200x1200.jpg" role="img"
+                                        aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                        focusable="false">
+                                        <title>Fiambre de pollo con huevo y pistachos</title>
+                                    </img>
+                                    <div class="card-body">
+                                        <div class="collapse" id="collapseText8">
+                                            <p class="card-text text-center mt-3">
+                                                <strong>Fiambre de Pollo con Huevo y Pistachos</strong><br>
+                                                Ingredientes:<br>
+                                                - 800g de pechuga de pollo picada<br>
+                                                - 3 huevos duros<br>
+                                                - 100g de pistachos pelados<br>
+                                                - 2 huevos crudos<br>
+                                                - 100g de pan rallado<br>
+                                                - 1 cebolla<br>
+                                                - 2 dientes de ajo<br>
+                                                - Perejil fresco<br>
+                                                - Sal y pimienta al gusto
+                                            </p>
+                                            <hr>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="btn-group">
+                                                <button class="btn btn-sm text-bg-custom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseText8" aria-expanded="false" aria-controls="collapseText8">
+                                                    Información del plato
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm text-bg-custom" style="border: 4px solid #7111ad;">
+                                    <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                        src="https://content-cocina.lecturas.com/medio/2018/07/19/muslitos-de-pollo-con-salsa-de-ciruelas-secas-y-guisantes_03121588_800x800.jpg" role="img"
+                                        aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                        focusable="false">
+                                        <title>Muslitos de pollo con ciruelas secas</title>
+                                    </img>
+                                    <div class="card-body">
+                                        <div class="collapse" id="collapseText9">
+                                            <p class="card-text text-center mt-3">
+                                                <strong>Muslitos de Pollo con Ciruelas Secas</strong><br>
+                                                Ingredientes:<br>
+                                                - 8 muslitos de pollo<br>
+                                                - 200g de ciruelas secas sin hueso<br>
+                                                - 1 cebolla grande<br>
+                                                - 2 zanahorias<br>
+                                                - 2 dientes de ajo<br>
+                                                - 200ml de vino tinto<br>
+                                                - 1 rama de canela<br>
+                                                - 2 cucharadas de miel<br>
+                                                - Aceite de oliva<br>
+                                                - Sal y pimienta al gusto
+                                            </p>
+                                            <hr>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="btn-group">
+                                                <button class="btn btn-sm text-bg-custom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseText9" aria-expanded="false" aria-controls="collapseText9">
+                                                    Información del plato
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="py-3 my-4">
+                    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-bg-footer">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-bg-footer">Features</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-bg-footer">Pricing</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-bg-footer">FAQs</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-bg-footer">About</a></li>
+                    </ul>
+                    <p class="text-center text-body-secondary text-bg-footer">© 2024 Company, Inc</p>
+                </footer>
+            </div>
+            </main>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
