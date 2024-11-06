@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Definición del lenguaje de la página como español -->
+
+<head>
+    <!-- Metadatos de la página -->
+    <meta charset="UTF-8"> <!-- Codificación de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptación para dispositivos móviles -->
+    <title>Página con Sidebar y Contenido Principal</title> <!-- Título que aparece en la pestaña del navegador -->
+
+    <!-- Enlaces a recursos externos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Estilos de Bootstrap -->
+    <link rel="stylesheet" href="Ejer009.css"> <!-- Estilos personalizados -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- jQuery slim (no incluye funcionalidades avanzadas como AJAX) -->
+</head>
+
+<body>
+    <div class="row"> <!-- Fila principal de la página -->
+        <main> <!-- Sección principal de contenido -->
+            <div class="col"> <!-- Columna que contiene el contenido -->
+                <div class="album py-5 bg-light"> <!-- Estilo de "album" con fondo claro -->
+                    <div class="container"> <!-- Contenedor para centrar el contenido -->
+
+                        <!-- Fila para contenido de mensaje -->
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                            <!-- Contenedor del mensaje -->
+                            <div class="container my-5">
+                                <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
+                                    <!-- Botón para cerrar la sección, redirige al usuario al formulario -->
+                                    <button type="button" class="position-absolute top-0 end-0 p-3 m-3 btn-close bg-secondary bg-opacity-10 rounded-pill" aria-label="Close" onclick="window.location.href='Ejer009.html';"></button>
+                                    
+                                    <!-- Icono y mensaje -->
+                                    <svg class="bi mt-5 mb-3" width="48" height="48">
+                                        <use xlink:href="#check2-circle"></use>
+                                    </svg>
+                                    <h1 class="text-body-emphasis">Formulario enviado con exito</h1>
+                                    <p class="col-lg-10 mx-auto mb-5">
+                                        ¡Gracias por contactar con nosotros! Hemos recibido tu formulario correctamente. Nuestro equipo revisará tu mensaje y te responderá en las próximas 24-48 horas. Mientras tanto, te invitamos a seguir explorando nuestras deliciosas recetas de pollo. ¡Buen provecho!
+                                    </p>
+
+                                    <!-- Botón para enviar otro formulario -->
+                                    <ul class="nav nav-pills justify-content-center">
+                                        <li class="nav-item">
+                                            <a href="Formulario009.html" class="btn btn-primary text-bg-custom" aria-current="page">Enviar otro formulario</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts de Bootstrap y otros -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <script>
+        // Script para eliminar clases de error en los campos del formulario
+        document.querySelectorAll('.form-control').forEach(input => {
+            input.addEventListener('input', () => {
+                if (input.classList.contains('is-invalid')) {
+                    input.classList.remove('is-invalid');
+                    input.nextElementSibling.style.display = 'none';
+                }
+            });
+        });
+
+        // Script para quitar el estilo de error en los checkbox
+        document.querySelectorAll('.form-check-input').forEach(input => {
+            input.addEventListener('change', () => {
+                if (input.classList.contains('is-invalid')) {
+                    input.classList.remove('is-invalid');
+                    input.nextElementSibling.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
+    <!-- Pie de página con enlaces de navegación -->
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-bg-footer">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-bg-footer">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-bg-footer">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-bg-footer">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-bg-footer">About</a></li>
+        </ul>
+        <p class="text-center text-body-secondary text-bg-footer">© 2024 Company, Inc</p>
+    </footer>
+</body>
+
+</html>
