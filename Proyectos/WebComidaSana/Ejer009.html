@@ -25,37 +25,36 @@
                                 <path
                                     d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z" />
                             </svg>
-                            <h1 class=" ms-2" style="color: white;">VictorRuiz</h1>
+                            <h1 class=" ms-2" style="color: white;">RecetasFatLess</h1>
                         </a>
                     </div>
 
                     <div class="col-md-6 d-flex justify-content-end align-items-center mt-0">
                         <form class="mt-0 ms-auto" style="width: auto;">
-                            <input type="search" class="form-control" placeholder="Buscar..." aria-label="Search">
+                            <input type="search" id="searchInput" class="form-control" placeholder="Buscar..." aria-label="Search">
                         </form>
                         <a href="Formulario009.html" class="btn btn-primary text-bg-custom"
-                            aria-current="page">Contactanos</a>
+                            aria-current="page">Newsletter</a>
                     </div>
                     
                     <script>
-                        // Aquí va el script para filtrar las tarjetas
-                        document.getElementById('searchInput').addEventListener('input', function() {
-                            // Obtenemos el valor del campo de búsqueda y lo pasamos a minúsculas
-                            const searchQuery = this.value.toLowerCase();
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const searchInput = document.getElementById('searchInput');
                 
-                            // Obtenemos todas las tarjetas (divs con la clase 'card')
-                            const cards = document.querySelectorAll('.card');
+                            searchInput.addEventListener('input', function() {
+                                const searchQuery = searchInput.value.toLowerCase();
                 
-                            // Iteramos sobre todas las tarjetas para ver si el título coincide con el término de búsqueda
-                            cards.forEach(function(card) {
-                                const cardTitle = card.querySelector('.card-title').textContent.toLowerCase();
-                                
-                                // Si el título de la tarjeta incluye el término de búsqueda, la mostramos
-                                if (cardTitle.includes(searchQuery)) {
-                                    card.style.display = 'block';  // Mostrar la tarjeta
-                                } else {
-                                    card.style.display = 'none';  // Ocultar la tarjeta
-                                }
+                                const cards = document.querySelectorAll('.card');
+                
+                                cards.forEach(function(card) {
+                                    const button = card.querySelector('.btn');
+                
+                                    if (button && button.textContent.toLowerCase().includes(searchQuery)) {
+                                        card.style.display = 'block';
+                                    } else {
+                                        card.style.display = 'none';
+                                    }
+                                });
                             });
                         });
                     </script>
@@ -74,36 +73,65 @@
                 </div>
                 <div class="offcanvas-body">
                     <p>Mas adelante esto seran enlaces =)</p>
+                    <h2>Setas</h2>
                     <ul>
-                        <li><strong>Verduras de hoja verde:</strong> Espinacas, Acelga, Lechuga, Kale (col rizada),
-                            Rúcula, Berros</li>
-                        <li><strong>Vegetales crucíferos:</strong> Brócoli, Coliflor, Repollo, Coles de Bruselas, Grelos
-                        </li>
-                        <li><strong>Frutas:</strong> Manzanas, Plátanos, Fresas, Uvas, Kiwis, Mangos, Arándanos,
-                            Naranjas, Peras</li>
-                        <li><strong>Legumbres:</strong> Lentejas, Garbanzos, Frijoles (negros, rojos, blancos), Alubias,
-                            Guisantes</li>
-                        <li><strong>Cereales integrales:</strong> Avena, Quinua, Arroz integral, Cebada, Mijo, Amaranto,
-                            Trigo sarraceno (alforfón)</li>
-                        <li><strong>Proteínas magras:</strong> Pechuga de pollo, Pavo, Pescados (salmón, atún, trucha),
-                            Tofu, Tempeh, Huevos</li>
-                        <li><strong>Frutos secos y semillas:</strong> Almendras, Nueces, Pistachos, Semillas de chía,
-                            Semillas de lino, Semillas de calabaza, Semillas de girasol</li>
-                        <li><strong>Tubérculos:</strong> Batatas (camote), Papas moradas, Yuca</li>
-                        <li><strong>Aceites saludables:</strong> Aceite de oliva extra virgen, Aceite de coco, Aceite de
-                            aguacate</li>
-                        <li><strong>Lácteos o alternativas:</strong> Yogur griego, Leche de almendra, Leche de avena,
-                            Queso cottage, Leche de coco (sin azúcar añadida)</li>
-                        <li><strong>Especias y hierbas frescas:</strong> Jengibre, Ajo, Albahaca, Cilantro, Cúrcuma,
-                            Comino, Pimentón, Romero, Tomillo</li>
-                        <li><strong>Otros alimentos:</strong> Aguacate, Tomates, Pepino, Zanahorias, Calabacín,
-                            Champiñones, Pimientos, Berenjenas</li>
+                        <li>Setas Salteadas con Ajo y Perejil</li>
+                        <li>Crema de Setas Saludable</li>
+                        <li>Pizza de Setas y Espinacas</li>
+                        <li>Revuelto de Setas con Tofu</li>
+                        <li>Ensalada de Setas y Espárragos</li>
+                        <li>Setas al Horno con Limón y Romero</li>
+                        <li>Risotto de Setas y Espárragos</li>
+                        <li>Setas en Salsa de Vino Blanco</li>
+                        <li>Brochetas de Setas y Verduras</li>
+                    </ul>
+
+                    <!-- Carne de Ternera -->
+                    <h2>Ternera</h2>
+                    <ul>
+                        <li>Filete de Ternera a la Parrilla con Espárragos</li>
+                        <li>Stir Fry de Ternera con Verduras</li>
+                        <li>Hamburguesas de Ternera a la Parrilla</li>
+                        <li>Carne de Ternera con Verduras al Horno</li>
+                        <li>Guiso de Ternera con Champiñones</li>
+                        <li>Ternera en Salsa de Mostaza y Miel</li>
+                        <li>Albóndigas de Ternera con Tomate</li>
+                        <li>Carne de Ternera a la Plancha con Ensalada</li>
+                        <li>Estofado de Ternera con Verduras</li>
+                    </ul>
+
+                    <!-- Pimientos -->
+                    <h2>Pimientos</h2>
+                    <ul>
+                        <li>Ensalada de Pimientos Asados</li>
+                        <li>Fajitas de Pollo y Pimientos</li>
+                        <li>Pimientos Rellenos de Quinoa y Verduras</li>
+                        <li>Pimientos Rellenos de Atún y Arroz Integral</li>
+                        <li>Salteado de Pimientos con Tofu</li>
+                        <li>Pimientos al Horno con Hierbas</li>
+                        <li>Ensalada de Pimientos y Garbanzos</li>
+                        <li>Revuelto de Pimientos y Huevos</li>
+                        <li>Pimientos y Calabacín Salteados con Ajo</li>
+                    </ul>
+
+                    <!-- Ternasco (Carne de Cordero) -->
+                    <h2>Ternasco</h2>
+                    <ul>
+                        <li>Asado de Ternasco al Horno con Hierbas</li>
+                        <li>Ternasco a la Parrilla con Limón y Romero</li>
+                        <li>Estofado de Ternasco con Patatas y Verduras</li>
+                        <li>Brochetas de Ternasco con Pimientos</li>
+                        <li>Ragú de Ternasco con Tomate</li>
+                        <li>Ternasco a la Mostaza con Puré de Zanahorias</li>
+                        <li>Costillas de Ternasco a la Barbacoa</li>
+                        <li>Ternasco a la Plancha con Ensalada Mediterránea</li>
+                        <li>Ternasco Guisado con Garbanzos</li>
                     </ul>
                 </div>
             </div>
         </div>
 
-            <div id="myCarousel" data-bs-ride="carousel" class="carousel carousel-dark slide">
+            <div id="myCarousel" data-bs-ride="carousel" class="carousel carousel-dark slide" style="margin-top: -2px;">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
@@ -119,7 +147,7 @@
                             <div class="carousel-caption text-center text-white">
                                 <h1 style="font-size: 3rem;">Las recetas más saludables</h1>
                                 <p style="font-size: 1.25rem;">Disfruta de platos llenos de nutrientes y energía, fáciles de preparar y perfectos para cuidar de tu salud todos los días.</p>
-                                <p><a href="Formulario009.html" class="btn btn-primary text-bg-custom"
+                                <p><a href="SaberMas.html" class="btn btn-primary text-bg-custom"
                                     aria-current="page">Saber más</a></p>
                             </div>
                         </div>
@@ -133,7 +161,7 @@
                             <div class="carousel-caption text-start text-white">
                                 <h1>Las recetas más sencillas</h1>
                                 <p>Descubre cómo preparar platos sabrosos en solo unos minutos, con ingredientes fáciles de conseguir. ¡Cocina como un chef, sin complicaciones!</p>
-                                <p><a href="Formulario009.html" class="btn btn-primary text-bg-custom"
+                                <p><a href="SaberMas.html" class="btn btn-primary text-bg-custom"
                                     aria-current="page">Saber más</a></p>
                             </div>
                         </div>
@@ -147,7 +175,7 @@
                             <div class="carousel-caption text-end text-white">
                                 <h1>Pero ante todo las recetas mas deliciosas</h1>
                                 <p>Disfruta de platos irresistibles, llenos de sabor y preparados con ingredientes frescos y de calidad.</p>
-                                <p><a href="Formulario009.html" class="btn btn-primary text-bg-custom"
+                                <p><a href="SaberMas.html" class="btn btn-primary text-bg-custom"
                                     aria-current="page">Saber más</a></p>
                             </div>
                         </div>
@@ -163,7 +191,7 @@
                 </button>
             </div>
 
-            <!-- Aquí van las tarjetas -->
+            <!--  tarjetas -->
 
             <div class="album py-5 bg-light">
                 <div class="container">

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Sidebar y Contenido Principal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Ejer009.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <header class="d-flex flex-wrap justify-content-center py-3 border-bottom"
+            style="margin-bottom: 0; background-color: #7C4DFF;">   
+            <div class="container">
+                <div class="row w-100 mt-0">
+                    <div class="col-md-6 d-flex justify-content-start align-items-center mt-0">
+                        <a class=" d-flex align-items-center text-decoration-none" data-bs-toggle="offcanvas"
+                            data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" fill="#ffffff"
+                                class="bi bi-egg-fried" viewBox="0 0 16 16">
+                                <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                <path
+                                    d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z" />
+                            </svg>
+                            <h1 class=" ms-2" style="color: white;">RecetasFatLess</h1>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 d-flex justify-content-end align-items-center mt-0">
+                        <form class="mt-0 ms-auto" style="width: auto;">
+                            <input type="search" class="form-control" placeholder="Buscar..." aria-label="Search">
+                        </form>
+                        <a href="Formulario009.html" class="btn btn-primary text-bg-custom"
+                            aria-current="page">Newsletter</a>
+                    </div>
+                    
+                    <script>
+                        // Aquí va el script para filtrar las tarjetas
+                        document.getElementById('searchInput').addEventListener('input', function() {
+                            // Obtenemos el valor del campo de búsqueda y lo pasamos a minúsculas
+                            const searchQuery = this.value.toLowerCase();
+                
+                            // Obtenemos todas las tarjetas (divs con la clase 'card')
+                            const cards = document.querySelectorAll('.card');
+                
+                            // Iteramos sobre todas las tarjetas para ver si el título coincide con el término de búsqueda
+                            cards.forEach(function(card) {
+                                const cardTitle = card.querySelector('.card-title').textContent.toLowerCase();
+                                
+                                // Si el título de la tarjeta incluye el término de búsqueda, la mostramos
+                                if (cardTitle.includes(searchQuery)) {
+                                    card.style.display = 'block';  // Mostrar la tarjeta
+                                } else {
+                                    card.style.display = 'none';  // Ocultar la tarjeta
+                                }
+                            });
+                        });
+                    </script>
+                </div>
+                <div class="row w-100 mt-0">
+                    <small style="font-size: 0.7rem;">Pulsa el huevo frito...</small>
+                    <div class="col-md-6">
+                    </div>
+                </div>
+        </header>
+        <div class="col">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+                <div class="offcanvas-header">
+                    <h5 id="sidebarLabel">Recetas saludables</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <p>Mas adelante esto seran enlaces =)</p>
+                    <ul>
+                        <li><strong>Verduras de hoja verde:</strong> Espinacas, Acelga, Lechuga, Kale (col rizada),
+                            Rúcula, Berros</li>
+                        <li><strong>Vegetales crucíferos:</strong> Brócoli, Coliflor, Repollo, Coles de Bruselas, Grelos
+                        </li>
+                        <li><strong>Frutas:</strong> Manzanas, Plátanos, Fresas, Uvas, Kiwis, Mangos, Arándanos,
+                            Naranjas, Peras</li>
+                        <li><strong>Legumbres:</strong> Lentejas, Garbanzos, Frijoles (negros, rojos, blancos), Alubias,
+                            Guisantes</li>
+                        <li><strong>Cereales integrales:</strong> Avena, Quinua, Arroz integral, Cebada, Mijo, Amaranto,
+                            Trigo sarraceno (alforfón)</li>
+                        <li><strong>Proteínas magras:</strong> Pechuga de pollo, Pavo, Pescados (salmón, atún, trucha),
+                            Tofu, Tempeh, Huevos</li>
+                        <li><strong>Frutos secos y semillas:</strong> Almendras, Nueces, Pistachos, Semillas de chía,
+                            Semillas de lino, Semillas de calabaza, Semillas de girasol</li>
+                        <li><strong>Tubérculos:</strong> Batatas (camote), Papas moradas, Yuca</li>
+                        <li><strong>Aceites saludables:</strong> Aceite de oliva extra virgen, Aceite de coco, Aceite de
+                            aguacate</li>
+                        <li><strong>Lácteos o alternativas:</strong> Yogur griego, Leche de almendra, Leche de avena,
+                            Queso cottage, Leche de coco (sin azúcar añadida)</li>
+                        <li><strong>Especias y hierbas frescas:</strong> Jengibre, Ajo, Albahaca, Cilantro, Cúrcuma,
+                            Comino, Pimentón, Romero, Tomillo</li>
+                        <li><strong>Otros alimentos:</strong> Aguacate, Tomates, Pepino, Zanahorias, Calabacín,
+                            Champiñones, Pimientos, Berenjenas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+            <!-- Aquí van las tarjetas -->
+    
+<div class="overflow-hidden" style="margin-top: -2px;">
+	<div class="container-fluid col-xxl-8">
+		<div class="row flex-lg-nowrap align-items-center g-5">
+			<div class="order-lg-1 w-100">
+				<img style="clip-path: polygon(25% 0%, 100% 0%, 100% 99%, 0% 100%);" src="MoradoHeader.png" sizes="(max-width: 1080px) 100vw, 1080px" width="2160" height="768">
+			</div>
+			<div class="col-lg-6 col-xl-5 text-center text-lg-start pt-lg-5 mt-xl-4">
+				<div class="lc-block mb-4">
+					<div editable="rich">
+						<h1 class="fw-bold display-3">Cuidamos tu salud sin perjudicar tu paladar</h1>
+					</div>
+				</div>
+
+				<div class="lc-block mb-5">
+					<div editable="rich">
+						<p class="rfs-8">Somos una web de recetas de comida saludables las cuales podras realizar de manera sencilla en tu dia a dia</p>
+					</div>
+				</div>
+                <a href="Ejer009.html" class="btn btn-primary text-bg-custom"
+                    style="padding: 10px 15px; font-size: 1.2rem;" aria-current="page">Ver recetas</a>
+				</div>
+			</div>
+
+		</div><!-- /lc-block -->
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row py-5">
+		<div class="col-lg-1 d-none d-lg-flex align-items-center">
+			<div class="lc-block d-flex" style="writing-mode: vertical-rl; transform:rotate(180deg)">
+				<a class="btn btn-link my-2 text-dark text-decoration-none" href="https://www.linkedin.com/in/v%C3%ADctor-ruiz-magall%C3%B3n-74a030330/" role="button">Linckedin</a>
+				<a class="btn btn-link my-4 text-dark text-decoration-none" href="https://github.com/VRuizInformatica/" role="button">Github</a>
+				<a class="btn btn-link my-2 text-dark text-decoration-none" href="https://www.youtube.com/@CuloInquieto" role="button">Youtube</a>
+			</div><!-- /lc-block -->
+		</div><!-- /col -->
+		<div class="col-sm-6 d-flex d-lg-none flex-sm-column align-items-center justify-content-around mb-4 mb-sm-0">
+			<div class="lc-block">
+				<a class="btn btn-link text-dark text-decoration-none" href="https://www.linkedin.com/in/v%C3%ADctor-ruiz-magall%C3%B3n-74a030330/" role="button">Linckedin</a>
+
+			</div>
+			<div class="lc-block">
+				<a class="btn btn-link text-dark text-decoration-none" href="https://github.com/VRuizInformatica/" role="button">Github</a>
+
+			</div>
+			<div class="lc-block">
+				<a class="btn btn-link text-dark text-decoration-none" href="https://www.youtube.com/@CuloInquieto" role="button">Youtube</a>
+
+			</div>
+		</div>
+		<div class="col-lg-3 col-sm-5">
+			<div class="lc-block ratio ratio-1x1">
+				<img style="object-fit:cover" class="img-fluid" src="FotoYo.png">
+			</div><!-- /lc-block -->
+		</div><!-- /col -->
+		<div class="col-lg-4 offset-lg-1">
+			<div class="lc-block my-5">
+				<div editable="rich">
+					<h2 class="rfs-25">Estudiante de informatica y creador de la web</h2>
+				</div>
+			</div>
+			<div class="lc-block my-5">
+				<div editable="rich">
+					<p>Dejo mis redes sociales en los lincks laterales por si quereis apoyarme o realizarme sugerencias.</p>
+				</div>
+			</div><!-- /lc-block -->
+			<div class="lc-block">
+                <a href="https://www.linkedin.com/in/v%C3%ADctor-ruiz-magall%C3%B3n-74a030330/" class="btn btn-primary text-bg-custom"
+                    style="padding: 10px 15px; font-size: 1.2rem;" aria-current="page">Contactame</a>
+
+			</div><!-- /lc-block -->
+		</div><!-- /col -->
+	</div>
+</div> 
+<div class="container">
+	<div class="row flex-lg-row-reverse align-items-center bg-white col-xxl-10 mx-auto py-4">
+		<div class="col-lg-4 ms-lg-4">
+			<div class="lc-block mb-4">
+				<img class="img-fluid shadow" src="logoSalesianos.png">
+			</div><!-- /lc-block -->
+		</div>
+		<div class="col-lg-7 ps-lg-4">
+			<div class="lc-block mb-4">
+				<div editable="rich">
+					<h1 class="rfs-30 fw-bold">Estudiate de Salesianos Zaragoza</h1>
+				</div>
+			</div>
+			<div class="lc-block mb-4">
+				<div editable="rich">
+					<p class="lead">Actualmente terminando DAM en Salesianos Zaragoza</p>
+				</div>
+			</div>
+			<div class="lc-block">
+                <a href="https://zaragoza.salesianos.edu/" class="btn btn-primary text-bg-custom"
+                    style="padding: 10px 15px; font-size: 1.2rem;" aria-current="page">Mas informacion</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-bg-footer">Home</a>
+                    </li>
+                    <li class="nav-item"><a href="Ejer009.html"
+                            class="nav-link px-2 text-body-secondary text-bg-footer">Back to top</a></li>
+                    <li class="nav-item"><a href="#"
+                            class="nav-link px-2 text-body-secondary text-bg-footer">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-bg-footer">FAQs</a>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-bg-footer">About</a>
+                    </li>
+                </ul>
+                <p class="text-center text-body-secondary text-bg-footer">© 2024 Company, Inc</p>
+            </footer>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
