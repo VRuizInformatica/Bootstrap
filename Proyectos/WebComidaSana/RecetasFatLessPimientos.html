@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="imagenes/Logo.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Ejer009.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <header class="d-flex flex-wrap justify-content-center py-3 border-bottom"
+            style="margin-bottom: 0; background-color: #7C4DFF;">
+            <div class="container">
+                <div class="row w-100 mt-0">
+                    <div class="col-md-6 d-flex justify-content-start align-items-center mt-0">
+                        <a class=" d-flex align-items-center text-decoration-none" data-bs-toggle="offcanvas"
+                            data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" fill="#ffffff"
+                                class="bi bi-egg-fried" viewBox="0 0 16 16">
+                                <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                <path
+                                    d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z" />
+                            </svg>
+                            <h1 class=" ms-2" style="color: white;">RecetasFatLess</h1>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 d-flex justify-content-end align-items-center mt-0">
+                        <form class="mt-0 ms-auto" style="width: auto;">
+                            <input type="search" id="searchInput" class="form-control" placeholder="Buscar..."
+                                aria-label="Search">
+                        </form>
+                        <a href="Formulario009.html" class="btn btn-primary text-bg-custom"
+                            aria-current="page">Newsletter</a>
+                    </div>
+
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            const searchInput = document.getElementById('searchInput');
+                            searchInput.addEventListener('input', function () {
+                                const searchQuery = searchInput.value.toLowerCase();
+                                const cards = document.querySelectorAll('.card');
+                                cards.forEach(function (card) {
+                                    const button = card.querySelector('.btn');
+                                    if (button && button.textContent.toLowerCase().includes(searchQuery)) {
+                                        card.style.display = 'block';
+                                    } else {
+                                        card.style.display = 'none';
+                                    }
+                                });
+                            });
+                        });
+                    </script>
+                </div>
+                <div class="row w-100 mt-0">
+                    <small style="font-size: 0.7rem;">Pulsa el huevo frito...</small>
+                    <div class="col-md-6">
+                    </div>
+                </div>
+        </header>
+        <div class="col">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+                <div class="offcanvas-header">
+                    <h5 id="sidebarLabel">Recetas saludables</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <a href="RecetasFatLessSetas.html" class="btn btn-primary text-bg-custom"
+                        style="padding: 5px 35px; font-size: 1.0rem;" aria-current="page">Setas</a>
+                    <ul>
+                        <li>Setas Salteadas con Ajo y Perejil</li>
+                        <li>Crema de Setas Saludable</li>
+                        <li>Pizza de Setas y Espinacas</li>
+                        <li>Revuelto de Setas con Tofu</li>
+                        <li>Ensalada de Setas y Espárragos</li>
+                        <li>Setas al Horno con Limón y Romero</li>
+                        <li>Risotto de Setas y Espárragos</li>
+                        <li>Setas en Salsa de Vino Blanco</li>
+                        <li>Brochetas de Setas y Verduras</li>
+                    </ul>
+
+                    <!-- Carne de Ternera -->
+                    <a href="RecetasFatLessTernera.html" class="btn btn-primary text-bg-custom"
+                        style="padding: 5px 35px; font-size: 1.0rem;" aria-current="page">Ternera</a>
+                    <ul>
+                        <li>Filete de Ternera a la Parrilla con Espárragos</li>
+                        <li>Stir Fry de Ternera con Verduras</li>
+                        <li>Hamburguesas de Ternera a la Parrilla</li>
+                        <li>Carne de Ternera con Verduras al Horno</li>
+                        <li>Guiso de Ternera con Champiñones</li>
+                        <li>Ternera en Salsa de Mostaza y Miel</li>
+                        <li>Albóndigas de Ternera con Tomate</li>
+                        <li>Carne de Ternera a la Plancha con Ensalada</li>
+                        <li>Estofado de Ternera con Verduras</li>
+                    </ul>
+
+                    <!-- Pimientos -->
+                    <a href="RecetasFatLessPimientos.html" class="btn btn-primary text-bg-custom"
+                        style="padding: 5px 35px; font-size: 1.0rem;" aria-current="page">Pimientos</a>
+                    <ul>
+                        <li>Ensalada de Pimientos Asados</li>
+                        <li>Fajitas de Pollo y Pimientos</li>
+                        <li>Pimientos Rellenos de Quinoa y Verduras</li>
+                        <li>Pimientos Rellenos de Atún y Arroz Integral</li>
+                        <li>Salteado de Pimientos con Tofu</li>
+                        <li>Pimientos al Horno con Hierbas</li>
+                        <li>Ensalada de Pimientos y Garbanzos</li>
+                        <li>Revuelto de Pimientos y Huevos</li>
+                        <li>Pimientos y Calabacín Salteados con Ajo</li>
+                    </ul>
+
+                    <!-- Ternasco (Carne de Cordero) -->
+                    <a href="RecetasFatLessTernasco.html" class="btn btn-primary text-bg-custom"
+                        style="padding: 5px 35px; font-size: 1.0rem;" aria-current="page">Ternasco</a>
+                    <ul>
+                        <li>Asado de Ternasco al Horno con Hierbas</li>
+                        <li>Ternasco a la Parrilla con Limón y Romero</li>
+                        <li>Estofado de Ternasco con Patatas y Verduras</li>
+                        <li>Brochetas de Ternasco con Pimientos</li>
+                        <li>Ragú de Ternasco con Tomate</li>
+                        <li>Ternasco a la Mostaza con Puré de Zanahorias</li>
+                        <li>Costillas de Ternasco a la Barbacoa</li>
+                        <li>Ternasco a la Plancha con Ensalada Mediterránea</li>
+                        <li>Ternasco Guisado con Garbanzos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--  tarjetas -->
+        <div class="d-flex justify-content-center align-items-center" style="height: 25vh;">
+            <h1 style="color: #7111ad;">Recetas con Pimientos</h1>
+        </div>
+        
+        <div class="album py-5" style="margin-top: -60px;">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm text-bg-custom" style="border: 4px solid #7111ad;">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                src="https://www.unileverfoodsolutions.es/dam/global-ufs/mcos/spain/acm/selling-story-calcmenu/Ensalada%20de%20pimientos%20asados-header.jpg"
+                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                focusable="false">
+                            </img>
+                            <div class="card-body">
+                                <div class="collapse" id="collapseText1">
+                                    <p class="card-text text-center mt-3">
+                                        <strong>Ensalada de Pimientos Asados</strong><br>
+                                        Ingredientes:<br>
+                                        - 4 pimientos rojos<br>
+                                        - 1 cebolla morada<br>
+                                        - 1 diente de ajo<br>
+                                        - 2 cucharadas de aceite de oliva<br>
+                                        - 1 cucharada de vinagre balsámico<br>
+                                        - Sal y pimienta al gusto
+                                    </p>
+                                    
+                                    <hr>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="btn-group">
+                                        <button class="btn btn-sm text-bg-custom info-btn" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseText1"
+                                            aria-expanded="false" aria-controls="collapseText1">
+                                            Ensalada de Pimientos Asados
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm text-bg-custom" style="border: 4px solid #7111ad;">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                src="https://www.lavanguardia.com/files/og_thumbnail/files/fp/uploads/2020/01/07/5e998028d7e8e.r_d.493-317-0.jpeg"
+                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                focusable="false">
+                            </img>
+                            <div class="card-body">
+                                <div class="collapse" id="collapseText2">
+                                    <p class="card-text text-center mt-3">
+                                        <strong>Fajitas de Pollo y Pimientos</strong><br>
+                                        Ingredientes:<br>
+                                        - 2 pechugas de pollo<br>
+                                        - 2 pimientos rojos<br>
+                                        - 2 pimientos verdes<br>
+                                        - 1 cebolla<br>
+                                        - 2 cucharadas de aceite de oliva<br>
+                                        - 1 cucharadita de comino<br>
+                                        - 1 cucharadita de pimentón<br>
+                                        - Tortillas de harina<br>
+                                        - Sal y pimienta al gusto
+                                    </p>
+                                    
+                                    <hr>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="btn-group">
+                                        <button class="btn btn-sm text-bg-custom info-btn" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseText2"
+                                            aria-expanded="false" aria-controls="collapseText2">
+                                            Fajitas de Pollo y Pimientos
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm text-bg-custom" style="border: 4px solid #7111ad;">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                src="https://comedera.com/wp-content/uploads/sites/9/2024/10/shutterstock_394395796.jpg?resize=1316,740&quality=80"
+                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                focusable="false">
+                            </img>
+                            <div class="card-body">
+                                <div class="collapse" id="collapseText3">
+                                    <p class="card-text text-center mt-3">
+                                        <strong>Pimientos Rellenos de Quinoa y Verduras</strong><br>
+                                        Ingredientes:<br>
+                                        - 4 pimientos grandes (rojos o amarillos)<br>
+                                        - 200 g de quinoa cocida<br>
+                                        - 1 zanahoria<br>
+                                        - 1 calabacín<br>
+                                        - 1 cebolla<br>
+                                        - 1 diente de ajo<br>
+                                        - 2 cucharadas de aceite de oliva<br>
+                                        - Sal y pimienta al gusto
+                                    </p>
+                                    
+                                    <hr>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="btn-group">
+                                        <button class="btn btn-sm text-bg-custom info-btn" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseText3"
+                                            aria-expanded="false" aria-controls="collapseText3">
+                                            Pimientos Rellenos de Quinoa y Verduras
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm text-bg-custom" style="border: 4px solid #7111ad;">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                src="https://www.pequerecetas.com/wp-content/uploads/2015/10/pimientos-rellenos-arroz-atun.jpg"
+                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                focusable="false">
+                            </img>
+                            <div class="card-body">
+                                <div class="collapse" id="collapseText4">
+                                    <p class="card-text text-center mt-3">
+                                        <strong>Pimientos Rellenos de Atún y Arroz Integral</strong><br>
+                                        Ingredientes:<br>
+                                        - 4 pimientos grandes<br>
+                                        - 2 latas de atún al natural<br>
+                                        - 200 g de arroz integral cocido<br>
+                                        - 1 cebolla<br>
+                                        - 1 diente de ajo<br>
+                                        - 2 cucharadas de mayonesa o yogur natural<br>
+                                        - Sal y pimienta al gusto
+                                    </p>
+                                    
+                                    <hr>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="btn-group">
+                                        <button class="btn btn-sm text-bg-custom info-btn" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseText4"
+                                            aria-expanded="false" aria-controls="collapseText4">
+                                            Pimientos Rellenos de Atún y Arroz Integral
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm text-bg-custom" style="border: 4px solid #7111ad;">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                src="https://okdiario.com/img/2018/09/04/salteado-de-tofu.jpg"
+                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                focusable="false">
+                            </img>
+                            <div class="card-body">
+                                <div class="collapse" id="collapseText5">
+                                    <p class="card-text text-center mt-3">
+                                        <strong>Salteado de Pimientos con Tofu</strong><br>
+                                        Ingredientes:<br>
+                                        - 2 pimientos rojos<br>
+                                        - 1 pimiento verde<br>
+                                        - 200 g de tofu firme<br>
+                                        - 2 cucharadas de aceite de oliva<br>
+                                        - 1 diente de ajo<br>
+                                        - 1 cucharadita de salsa de soja<br>
+                                        - Sal y pimienta al gusto
+                                    </p>
+                                    
+                                    <hr>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="btn-group">
+                                        <button class="btn btn-sm text-bg-custom info-btn" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseText5"
+                                            aria-expanded="false" aria-controls="collapseText5">
+                                            Salteado de Pimientos con Tofu
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm text-bg-custom" style="border: 4px solid #7111ad;">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                src="https://www.pequerecetas.com/wp-content/uploads/2020/03/pimientos-asados.jpg"
+                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                focusable="false">
+                            </img>
+                            <div class="card-body">
+                                <div class="collapse" id="collapseText6">
+                                    <p class="card-text text-center mt-3">
+                                        <strong>Pimientos al Horno con Hierbas</strong><br>
+                                        Ingredientes:<br>
+                                        - 4 pimientos rojos o amarillos<br>
+                                        - 2 cucharadas de aceite de oliva<br>
+                                        - 1 cucharadita de orégano seco<br>
+                                        - 1 cucharadita de tomillo<br>
+                                        - Sal y pimienta al gusto
+                                    </p>
+                                    
+                                    <hr>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="btn-group">
+                                        <button class="btn btn-sm text-bg-custom info-btn" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseText6"
+                                            aria-expanded="false" aria-controls="collapseText6">
+                                            Pimientos al Horno con Hierbas
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm text-bg-custom" style="border: 4px solid #7111ad;">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                src="https://patijinich.com/es/wp-content/uploads/sites/3/2017/08/404-ensalada-de-pepino-pimiento-y-garbanzo.jpg"
+                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                focusable="false">
+                            </img>
+                            <div class="card-body">
+                                <div class="collapse" id="collapseText7">
+                                    <p class="card-text text-center mt-3">
+                                        <strong>Ensalada de Pimientos y Garbanzos</strong><br>
+                                        Ingredientes:<br>
+                                        - 2 pimientos rojos<br>
+                                        - 1 lata de garbanzos cocidos (400 g)<br>
+                                        - 1 cebolla morada<br>
+                                        - 1 cucharada de vinagre de manzana<br>
+                                        - 2 cucharadas de aceite de oliva<br>
+                                        - Sal y pimienta al gusto
+                                    </p>
+                                    
+                                    <hr>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="btn-group">
+                                        <button class="btn btn-sm text-bg-custom info-btn" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseText7"
+                                            aria-expanded="false" aria-controls="collapseText7">
+                                            Ensalada de Pimientos y Garbanzos
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm text-bg-custom" style="border: 4px solid #7111ad;">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                src="https://content-cocina.lecturas.com/medio/2023/07/19/revuelto-de-pimientos-de-tres-colores_429a00b4_1280x720.jpg"
+                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                focusable="false">
+                            </img>
+                            <div class="card-body">
+                                <div class="collapse" id="collapseText8">
+                                    <p class="card-text text-center mt-3">
+                                        <strong>Revuelto de Pimientos y Huevos</strong><br>
+                                        Ingredientes:<br>
+                                        - 2 pimientos rojos<br>
+                                        - 4 huevos<br>
+                                        - 1 cebolla<br>
+                                        - 2 cucharadas de aceite de oliva<br>
+                                        - Sal y pimienta al gusto
+                                    </p>
+                                    
+                                    <hr>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="btn-group">
+                                        <button class="btn btn-sm text-bg-custom info-btn" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseText8"
+                                            aria-expanded="false" aria-controls="collapseText8">
+                                            Revuelto de Pimientos y Huevos
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm text-bg-custom" style="border: 4px solid #7111ad;">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                src="https://micocinareal.com/wp-content/uploads/ACOMPANAR-Calabacin-y-pimiento-rojo.jpg"
+                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                focusable="false">
+                            </img>
+                            <div class="card-body">
+                                <div class="collapse" id="collapseText9">
+                                    <p class="card-text text-center mt-3">
+                                        <strong>Pimientos y Calabacín Salteados con Ajo</strong><br>
+                                        Ingredientes:<br>
+                                        - 2 pimientos rojos<br>
+                                        - 1 calabacín<br>
+                                        - 2 dientes de ajo<br>
+                                        - 2 cucharadas de aceite de oliva<br>
+                                        - Sal y pimienta al gusto
+                                    </p>
+                                    
+                                    <hr>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="btn-group">
+                                        <button class="btn btn-sm text-bg-custom info-btn" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseText9"
+                                            aria-expanded="false" aria-controls="collapseText9">
+                                            Pimientos y Calabacín Salteados con Ajo
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-bg-footer">Home</a>
+                </li>
+                <li class="nav-item"><a href="RecetasFatLess.html"
+                        class="nav-link px-2 text-body-secondary text-bg-footer">Back to top</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-bg-footer">Pricing</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-bg-footer">FAQs</a>
+                </li>
+                <li class="nav-item"><a href="About.html"
+                        class="nav-link px-2 text-body-secondary text-bg-footer">About</a>
+                </li>
+            </ul>
+            <p class="text-center text-body-secondary text-bg-footer">© 2024 Victor Ruiz, RecetasFatLess </p>
+        </footer>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

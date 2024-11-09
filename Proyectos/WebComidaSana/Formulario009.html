@@ -4,9 +4,10 @@
 <head>
     <!-- Definición de los metadatos y enlaces para los recursos -->
     <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura el viewport para que sea responsivo en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura el viewport para que sea responsivo en dispositivos móviles -->
     <title>Página con Sidebar y Contenido Principal</title> <!-- Título que aparecerá en la pestaña del navegador -->
-    
+
     <!-- Enlace a Bootstrap 5.3.0 para los estilos predeterminados -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Enlace al archivo CSS personalizado (Ejer009.css) para estilos adicionales -->
@@ -18,17 +19,21 @@
 
 <body>
     <div class="container"> <!-- Contenedor principal de la página para centrar el contenido -->
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> <!-- Barra de navegación con un diseño flexible -->
-            <a href="Ejer009.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <!-- Enlace con logo de la página, con un icono SVG que tiene un enlace a "Ejer009.html" -->
-                <svg xmlns="https://img.freepik.com/vector-gratis/cortes-pollo-cartel-carniceria_1284-47535.jpg?t=st=1730835117~exp=1730838717~hmac=ac2aad8cb298e6d806de596b540007729b94cefe9c42c5d5ab17fa9cc78bf88d&w=1380" width="40" height="32" fill="currentColor" class="bi bi-egg-fried" viewBox="0 0 16 16">
-                    <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-                    <path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"/>
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <!-- Barra de navegación con un diseño flexible -->
+            <a href="RecetasFatLess.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <!-- Enlace con logo de la página, con un icono SVG que tiene un enlace a "RecetasFatLess.html" -->
+                <svg xmlns="https://img.freepik.com/vector-gratis/cortes-pollo-cartel-carniceria_1284-47535.jpg?t=st=1730835117~exp=1730838717~hmac=ac2aad8cb298e6d806de596b540007729b94cefe9c42c5d5ab17fa9cc78bf88d&w=1380"
+                    width="40" height="32" fill="currentColor" class="bi bi-egg-fried" viewBox="0 0 16 16">
+                    <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                    <path
+                        d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z" />
                 </svg>
             </a>
             <!-- Botón para regresar a la página principal -->
             <ul class="nav nav-pills">
-                <a href="Ejer009.html" class="btn btn-primary text-bg-custom" aria-current="page">Volver</a>
+                <a href="RecetasFatLess.html" class="btn btn-primary text-bg-custom" aria-current="page">Volver</a>
             </ul>
         </header>
     </div>
@@ -39,17 +44,22 @@
             <main> <!-- Sección principal de contenido -->
                 <div class="col">
                     <div class="album py-5 bg-white"> <!-- Estilo para una sección de "album" con fondo claro -->
-                        <h1 class="text-body-emphasis text-center" style="margin-bottom: 50px;">Newsletter Gratuita!</h1>
+                        <h1 class="text-body-emphasis text-center" style="margin-bottom: 50px;">Newsletter Gratuita!
+                        </h1>
                         <div class="container"> <!-- Contenedor para el contenido dentro del "album" -->
-                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"> <!-- Fila con columnas adaptables -->
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                                <!-- Fila con columnas adaptables -->
                                 <div class="container">
-                                    <div class="d-flex justify-content-center"> <!-- Centra el formulario en la página -->
+                                    <div class="d-flex justify-content-center">
+                                        <!-- Centra el formulario en la página -->
                                         <form> <!-- Formulario de contacto o entrada de datos -->
                                             <!-- Sección para el campo de nombre -->
                                             <div class="row mb-3">
                                                 <div class="col">
                                                     <label for="validationServer01" class="form-label">Nombre</label>
-                                                    <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="Victor" required>
+                                                    <input type="text" class="form-control is-valid"
+                                                        id="validationServer01" placeholder="First name" value="Victor"
+                                                        required>
                                                     <div class="valid-feedback">
                                                         Perfecto!
                                                     </div>
@@ -59,10 +69,13 @@
                                             <!-- Sección para el campo de email y ciudad -->
                                             <div class="row mb-3">
                                                 <div class="col-md-6">
-                                                    <label for="validationServerUsername" class="form-label">Email</label>
+                                                    <label for="validationServerUsername"
+                                                        class="form-label">Email</label>
                                                     <div class="input-group">
                                                         <span class="input-group-text" id="inputGroupPrepend3">@</span>
-                                                        <input type="text" class="form-control is-invalid" id="validationServerUsername" placeholder="Email" aria-describedby="inputGroupPrepend3" required>
+                                                        <input type="text" class="form-control is-invalid"
+                                                            id="validationServerUsername" placeholder="Email"
+                                                            aria-describedby="inputGroupPrepend3" required>
                                                         <div class="invalid-feedback">
                                                             Introduzca su email.
                                                         </div>
@@ -70,7 +83,8 @@
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label for="validationServer03" class="form-label">City</label>
-                                                    <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="Ciudad" required>
+                                                    <input type="text" class="form-control is-invalid"
+                                                        id="validationServer03" placeholder="Ciudad" required>
                                                     <div class="invalid-feedback">
                                                         Introduzca una ciudad.
                                                     </div>
@@ -81,14 +95,17 @@
                                             <div class="row mb-3">
                                                 <div class="col-md-6">
                                                     <label for="validationServer04" class="form-label">Pais</label>
-                                                    <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="Pais" required>
+                                                    <input type="text" class="form-control is-invalid"
+                                                        id="validationServer04" placeholder="Pais" required>
                                                     <div class="invalid-feedback">
                                                         Introduzca su pais.
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <label for="validationServer05" class="form-label">Codigo postal</label>
-                                                    <input type="text" class="form-control is-invalid" id="validationServer05" placeholder="50000" required>
+                                                    <label for="validationServer05" class="form-label">Codigo
+                                                        postal</label>
+                                                    <input type="text" class="form-control is-invalid"
+                                                        id="validationServer05" placeholder="50000" required>
                                                     <div class="invalid-feedback">
                                                         Introduzca su codigo postal
                                                     </div>
@@ -99,7 +116,8 @@
                                             <div class="row mb-3">
                                                 <div class="col-md-6 d-flex align-items-center">
                                                     <div class="form-check">
-                                                        <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+                                                        <input class="form-check-input is-invalid" type="checkbox"
+                                                            value="" id="invalidCheck3" required>
                                                         <label class="form-check-label" for="invalidCheck3">
                                                             Acepto los terminos y condiciones
                                                         </label>
@@ -110,7 +128,8 @@
                                                 </div>
                                                 <div class="col-md-6 d-flex align-items-center justify-content-end">
                                                     <ul class="nav nav-pills">
-                                                        <a href="Submit.html" class="btn btn-primary text-bg-custom" aria-current="page">Enviar</a>
+                                                        <a href="Submit.html" class="btn btn-primary text-bg-custom"
+                                                            aria-current="page">Enviar</a>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -119,10 +138,11 @@
                                 </div>
 
                                 <!-- Scripts de Bootstrap y jQuery -->
-                                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                                <script
+                                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
                                     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
                                     crossorigin="anonymous"></script>
-                                
+
                                 <!-- Script para eliminar los estilos "is-invalid" cuando el usuario interactúa -->
                                 <script>
                                     document.querySelectorAll('.form-control').forEach(input => {
@@ -150,11 +170,16 @@
                     <!-- Pie de página con enlaces de navegación -->
                     <footer class="py-3 my-4">
                         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-bg-footer">Home</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-bg-footer">Features</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-bg-footer">Pricing</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-bg-footer">FAQs</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-bg-footer">About</a></li>
+                            <li class="nav-item"><a href="#"
+                                    class="nav-link px-2 text-body-secondary text-bg-footer">Home</a></li>
+                            <li class="nav-item"><a href="#"
+                                    class="nav-link px-2 text-body-secondary text-bg-footer">Features</a></li>
+                            <li class="nav-item"><a href="#"
+                                    class="nav-link px-2 text-body-secondary text-bg-footer">Pricing</a></li>
+                            <li class="nav-item"><a href="#"
+                                    class="nav-link px-2 text-body-secondary text-bg-footer">FAQs</a></li>
+                            <li class="nav-item"><a href="#"
+                                    class="nav-link px-2 text-body-secondary text-bg-footer">About</a></li>
                         </ul>
                         <!-- Información de copyright -->
                         <p class="text-center text-body-secondary text-bg-footer">© 2024 Company, Inc</p>
